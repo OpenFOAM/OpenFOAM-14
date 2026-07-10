@@ -2,7 +2,7 @@
 # =========                 |
 # \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
 #  \\    /   O peration     | Website:  https://openfoam.org
-#   \\  /    A nd           | Copyright (C) 2011-2025 OpenFOAM Foundation
+#   \\  /    A nd           | Copyright (C) 2011-2026 OpenFOAM Foundation
 #    \\/     M anipulation  |
 #------------------------------------------------------------------------------
 # License
@@ -33,7 +33,7 @@
 
 export WM_PROJECT=OpenFOAM
 export WM_THIRD_PARTY=ThirdParty
-export WM_PROJECT_VERSION=dev
+export WM_PROJECT_VERSION=14
 
 ################################################################################
 # USER EDITABLE PART: Changes made here may be lost with the next upgrade
