@@ -96,8 +96,9 @@ extern const dimensionSet compressibility;
 
 extern const dimensionSet kinematicViscosity;
 extern const dimensionSet dynamicViscosity;
-extern const dimensionSet thermalConductivity;
+extern const dimensionSet kinematicDiffusivity;
 extern const dimensionSet dynamicDiffusivity;
+extern const dimensionSet thermalConductivity;
 
 extern const dimensionSet turbulentKineticEnergy;
 extern const dimensionSet kinematicStress;
@@ -107,8 +108,13 @@ extern const dimensionSet turbulentOmega;
 extern const dimensionSet turbulentViscosity;
 
 extern const dimensionSet volumetricFlux;
+extern const dimensionSet volumetricFluxDensity;
+
 extern const dimensionSet massFlux;
+extern const dimensionSet massFluxDensity;
+
 extern const dimensionSet heatFlux;
+extern const dimensionSet heatFluxDensity;
 
 extern const dimensionSet charge;
 extern const dimensionSet chargeDensity;
