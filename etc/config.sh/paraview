@@ -92,7 +92,7 @@ system)
 
         # Add to the library paths
         export LD_LIBRARY_PATH=$ParaView_LIB_DIR:$LD_LIBRARY_PATH
-        if [ $ParaView_LIB_DIR != $VTK_LIB_DIR ]
+        if [ "$ParaView_LIB_DIR" != "$VTK_LIB_DIR" ]
         then
             export LD_LIBRARY_PATH=$VTK_LIB_DIR:$LD_LIBRARY_PATH
         fi
