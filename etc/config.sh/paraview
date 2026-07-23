@@ -83,7 +83,12 @@ system)
                                grep -o "/[^ \t]\+libvtkCommonCore[^ \t]\+" | \
                                xargs readlink -f)
             export VTK_LIB_DIR=$(dirname $libvtkCommonCore 2> /dev/null)
-            export VTK_INCLUDE_DIR=$ParaView_DIR/include/vtk-${libvtkCommonCore#*.so.}
+            if [ -f "$ParaView_DIR/include/vtk/vtkMultiBlockDataSetAlgorithm.h" ]
+            then
+                export VTK_INCLUDE_DIR="$ParaView_DIR/include/vtk"
+            else
+                export VTK_INCLUDE_DIR="$ParaView_DIR/include/vtk-${libvtkCommonCore#*.so.}"
+            fi
             unset libvtkCommonCore
         else
             export VTK_LIB_DIR=$ParaView_LIB_DIR
