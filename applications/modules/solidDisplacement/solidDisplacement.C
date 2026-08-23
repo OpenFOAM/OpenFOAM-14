@@ -185,6 +185,7 @@ void Foam::solvers::solidDisplacement::pressureCorrector()
     int iCorr = 0;
     scalar initialResidual = 0;
 
+    do
     {
         {
             fvVectorMatrix DEqn
